@@ -1803,7 +1803,11 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 0 2em 2em 0;
+			margin: 0 0 0 0 ;
+			max-height: 100%;
+        	display: block; 
+			border-radius: 0 0 0 0;
+			
 		}
 
 		.image.centered {
@@ -2055,7 +2059,7 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
+		background: #df66a9;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2196,11 +2200,22 @@ input, select, textarea {
 		#header .inner {
 			position: relative;
 			z-index: 1;
-			margin: 0;
+			margin: 1;
 			display: inline-block;
 			vertical-align: middle;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+			text-align: middle;
+			width: 80vw;
+			height: 10cm;
+
 		}
 
+
+		#header .image{
+			border-radius: 20px;
+
+		}
 		#header header {
 			display: inline-block;
 		}
@@ -2290,6 +2305,7 @@ input, select, textarea {
 		padding: 1.5em 0 1.5em 0;
 		z-index: 1;
 		overflow: hidden;
+		background-color: rgba(0, 0, 0, 0.507);
 	}
 
 		#nav > ul {
@@ -2672,8 +2688,8 @@ input, select, textarea {
 			}
 
 				#header .inner {
-					padding-left: 2em;
-					padding-right: 2em;
+					padding-left: 0em;
+					padding-right: 0em;
 				}
 
 		/* Banner */
@@ -2731,7 +2747,8 @@ input, select, textarea {
 					margin: 0 1em 0 0;
 				}
 
-	}
+	}	/*Image */
+			#image
 
 /* Mobile */
 
@@ -2764,6 +2781,20 @@ input, select, textarea {
 				top: 3em;
 				margin-bottom: 6em;
 			}
+		
+		/* Header */
+
+		#header {
+			background-attachment: scroll;
+
+		}
+
+			#header:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			height: 200%;
+		}
 
 		/* Section/Article */
 
@@ -2790,7 +2821,12 @@ input, select, textarea {
 			}
 
 			.image.left {
-				margin: 0 1em 1em 0;
+				margin: 0;
+				float: middle;
+				max-width: 100%;
+
+
+
 			}
 
 			.image.centered {
@@ -3052,13 +3088,12 @@ input, select, textarea {
 			}
 
 				#header .inner {
-					padding-top: 1.5em;
-					padding-left: 1em;
-					padding-right: 1em;
+					width: 70vw;
+					height: 80vh;
 				}
 
 				#header header > p {
-					font-size: 1em;
+					font-size: 0.8em;
 				}
 
 				#header h1 {
@@ -3073,7 +3108,7 @@ input, select, textarea {
 			body.homepage #header {
 				min-height: 0;
 				padding: 5.5em 0 5em 0;
-				height: auto;
+
 			}
 
 				body.homepage #header:before {
@@ -3135,4 +3170,13 @@ input, select, textarea {
 						margin-bottom: 2em;
 					}
 
+		/* Box */
+					
+			.box {
+				margin: 5%;
+   				color: #000000;
+   				font-weight: bold;
+
+
+			}
 	}
