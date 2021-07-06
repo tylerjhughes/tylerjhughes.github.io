@@ -124,7 +124,7 @@ input, select, textarea {
 	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 		font-weight: 600;
 	}
-
+	
 	h2 {
 		font-size: 2.85em;
 	}
@@ -1806,7 +1806,8 @@ input, select, textarea {
 			margin: 0 0 0 0 ;
 			max-height: 100%;
         	display: block; 
-			border-radius: 0 0 0 0;
+			border-radius: 20;
+			padding-right: 4vw;
 			
 		}
 
@@ -2059,7 +2060,7 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df66a9;
+		background: #df66a99f;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2201,11 +2202,11 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 			margin: 1;
-			display: inline-block;
+			display: inline-flex;
 			vertical-align: middle;
 			background-color: rgba(0, 0, 0, 0.5);
 			border-radius: 20px;
-			text-align: middle;
+			text-align: left;
 			width: 80vw;
 			height: 10cm;
 
@@ -2221,14 +2222,15 @@ input, select, textarea {
 		}
 
 			#header header > p {
-				font-size: 1.25em;
+				font-size: clamp(0.9rem, 1.5vw, 1.5rem); ;
 				margin: 0;
 			}
 
 		#header h1 {
 			color: #fff;
-			font-size: 3em;
-			line-height: 1em;
+			font-size: 3vw;
+			line-height: 0.8em;
+			padding-top: 1cm;
 		}
 
 			#header h1 a {
@@ -2236,14 +2238,14 @@ input, select, textarea {
 			}
 
 		#header .button {
-			display: inline-block;
-			border-radius: 100%;
-			width: 4.5em;
-			height: 4.5em;
-			line-height: 4.5em;
+			float: bottom;
+			display: inline;
+			border-radius: 0cm;
+			width: 20%;
+			height: 3em;
+			line-height: 3em;
 			text-align: center;
 			font-size: 1.25em;
-			padding: 0;
 		}
 
 		#header hr {
@@ -2267,7 +2269,7 @@ input, select, textarea {
 	}
 
 		body.homepage #header h1 {
-			font-size: 4em;
+			font-size: clamp(1.5rem, 5vw, 4rem);
 		}
 
 		body.homepage #header:after {
@@ -2824,8 +2826,6 @@ input, select, textarea {
 				margin: 0;
 				float: middle;
 				max-width: 100%;
-
-
 
 			}
 
